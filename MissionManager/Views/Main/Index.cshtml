@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="split left" ng-controller="missionCtrl">
+    <div class="centered">
+        Mission Description : <input type="text" ng-model="missionDescription" /> <br /> <br />
+        Picture URL : <input type="text" ng-model="picPath">
+        <button ng-click="addMission(missionDescription,picPath)">Add</button>
+
+    </div>
+</div>
+
+<div class="split right" ng-controller="missionCtrl">
+    <div class="centered">
+        <table>
+            <tr>
+                <th>Description</th>
+                <th>Picture</th>
+            </tr>
+            <tr ng-repeat="m in Missions">
+                <td>{{m.description}}</td>
+                <td><img src="{{m.picPath}}" /></td>
+            </tr>
+        </table>
+    </div>
+</div>

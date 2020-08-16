@@ -1,0 +1,48 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+    left: 0;
+    background-color: antiquewhite;
+}
+
+/* Control the right side */
+.right {
+    right: 0;
+    background-color: gainsboro;
+}
+
+img {
+    width: 150px;
+    height:150px;
+}
+
+table, th, td {
+    border: 3px solid black;
+}
